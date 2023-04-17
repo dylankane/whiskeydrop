@@ -7,14 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
   <script src="https://kit.fontawesome.com/d11678a87a.js" crossorigin="anonymous"></script>
   <title>Whiskey Drop | Taste a new Whiskey every month</title>
 </head>
 
 <body>
+
+  <!-- navbar -->
   <nav class="navbar navbar-light bg-light navbar-expand-sm">
     <a href="/" class="navbar-brand">Whiskey Drop</a>
-
     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span></button>
@@ -22,7 +25,6 @@
       <ul class="navbar-nav mr-auto">
         <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
         <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
-
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
@@ -35,7 +37,6 @@
             <a class="dropdown-item" href="#">American</a>
           </div>
         </li>
-
         <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a></li>
       </ul>
     </div>
@@ -44,7 +45,10 @@
       <a href="/login">Sign In / Sign Up</a>
     </div>
   </nav>
-  <article class="container mt-3">
+  <!-- / navbar -->
+
+  <!-- Alert -->
+  <div class="container alert-container">
     <div class="row d-none d-sm-block">
       <div class="col-12">
         <div class="alert alert-warning">
@@ -53,7 +57,11 @@
         </div>
       </div>
     </div>
-    <!-- Callout -->
+  </div>
+  <!-- /Alert -->
+
+  <!-- Callout -->
+  <div class="container callout-container">
     <div class="row">
       <div class="col-12">
         <section class="callout jumbotron text-center">
@@ -67,10 +75,11 @@
         </section>
       </div>
     </div>
-    <!-- /.callout -->
-    <hr>
+  </div>
+  <!-- /.callout -->
 
-    <!-- Quotes -->
+  <!-- Quotes -->
+  <div class="container quotes-container">
     <section class="quotes">
       <div class="row">
         <div class="col-12 my-5">
@@ -105,10 +114,11 @@
           </div>
         </div>
     </section>
-    <!-- /.quotes -->
-    <hr>
+  </div>
+  <!-- /.quotes -->
 
-    <!-- Features -->
+  <!-- Features -->
+  <div class="features-container">
     <section class="features">
       <div class="row">
         <div class="col-12 my-5">
@@ -146,10 +156,11 @@
         </div>
       </div>
     </section>
-    <!-- /.features -->
-    <hr>
-
-    <!--Monthly favorites-->
+  </div>
+  <!-- /.features -->
+  
+  <!--Monthly favorites-->
+  <div class="container favorites-container">
     <section class="monthly-favorites text-centre">
       <div class="row">
         <div class="col-12 my-5">
@@ -203,9 +214,9 @@
         </div>
       </div>
     </section>
-    <!--Monthly favorites-->
-    <hr>
-  </article>
+  </div>
+  <!--/Monthly favorites-->
+
 
   <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
     <div class="modal-dialog" role="document">
@@ -220,7 +231,8 @@
           <form>
             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter Email">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
